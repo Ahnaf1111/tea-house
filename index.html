@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea house</title>
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/da52460d5f.js" crossorigin="anonymous"></script>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/da52460d5f.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         *{
             font-family: "Manrope", sans-serif;
@@ -19,8 +30,22 @@
     </style>
 </head>
 <body>
-    <header class="">
-
+    <header class="max-w-screen-xl p-5 md:px-20 mx-auto">
+        <!-- banner -->
+         <div class="sm:flex items-center">
+            <!-- banner-text -->
+            <div class="flex flex-col gap-8 flex-1">
+                <h1 class="text-3xl sm:text-5xl lg:text-7xl font-semibold sm:font-bold lg:font-extrabold">It's good tea time at The Tea House</h1>
+                <p class="text-gray-500 text-base max-w-[512px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <div>
+                    <button class="bg-gradient-to-r from-orange-400 to-red-600 px-8 py-4 rounded-3xl text-white font-medium">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+                </div>
+            </div>
+            <!-- banner-img -->
+             <div class="flex-1">
+                <img src="images/banner.png" alt="tea img">
+             </div>
+         </div>
     </header>
     <main>
 
